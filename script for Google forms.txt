@@ -1,7 +1,9 @@
 /**
  * AppsScript script to run in a Google Spreadsheet that synchronizes
  * Google Forms responses with a Fusion Table.
- * a video can be found here https://www.youtube.com/watch?v=sxR4ZETbK3U&list=FLVSFQ9XrsCDEvsoz_XpTj8A it is better than
+ * All cedits to Lee clonts
+ * A video can be found here https://www.youtube.com/watch?v=sxR4ZETbK3U&list=FLVSFQ9XrsCDEvsoz_XpTj8A 
+ * This script is better than
  * https://gist.github.com/chrislkeller/3013360 because 
  *                                                      -This script doesn't make duplicates from the original. 
  *                                                      -This script also sync's when a Form is submitted. 
