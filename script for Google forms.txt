@@ -412,3 +412,11 @@ function escapeQuotes(value) {
   }
   return value.replace(/\\/g, '\\\\').replace(/'/g, "\\\'");
 }
+// create menu buttons
+function onOpen() {
+    var ss = SpreadsheetApp.getActiveSpreadsheet();
+    var menuEntries = [{
+        name: "Update Fusion Table",
+        functionName: "sync"
+    }];
+    ss.addMenu("Sync Spreadsheet To Fusion Table", menuEntries);
