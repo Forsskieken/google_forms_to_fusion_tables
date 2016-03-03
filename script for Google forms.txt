@@ -426,3 +426,4 @@ function onOpen() {
         functionName: "sync"
     }];
     ss.addMenu("Sync Spreadsheet To Fusion Table", menuEntries);
+    };
