@@ -28,7 +28,12 @@ function sync() {
 
   // Get the data in the spreadsheet and convert it to a dictionary.
   var sheet = SpreadsheetApp.getActiveSheet();
-  var lastRow = sheet.getLastRow();
+  
+  //var lastRow = sheet.getLastRow();   sheet.getLastRow get all rows containing values or a formula
+  // With these 2 line you can decide wich column needs to be taken for looking at the last row with values
+  var Avals = sheet.getRange("A1:A").getValues();
+  var lastRow = Avals.filter(String).length;
+  Logger.log(lastRow);
   var lastColumn = sheet.getLastColumn();
   var spreadsheetData = sheet.getRange(1, 1, lastRow, lastColumn);
   var spreadsheetValues = spreadsheetData.getValues();
